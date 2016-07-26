@@ -62,7 +62,7 @@
 					<string>PATH="/usr/local/bin:$PATH"
 fileName=$(basename $1)
 dirPath=$(dirname $1)
-docker run --rm -v "$dirPath":/images image-resize "$fileName" 100 100</string>
+docker run --rm -v "$dirPath":/images image-resize "$fileName" 3000 3000</string>
 					<key>CheckedForUserDefaultShell</key>
 					<true/>
 					<key>inputMethod</key>
@@ -172,8 +172,6 @@ docker run --rm -v "$dirPath":/images image-resize "$fileName" 100 100</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
